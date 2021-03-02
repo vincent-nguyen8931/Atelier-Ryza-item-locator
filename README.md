@@ -1,6 +1,6 @@
 # Atelier-Ryza-item-locator
 
-![image](Workout-tracker-landing-page.png)
+![image]()
 
 Description
 ------------

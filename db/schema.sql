@@ -1,0 +1,11 @@
+CREATE DATABASE ryzaItemsDB;
+
+USE ryzaItemsDB;
+
+CREATE TABLE cast (
+  id INT NOT NULL AUTO_INCREMENT,
+  charName VARCHAR(45) NOT NULL,
+  coolness INTEGER(5) NOT NULL,
+  attitude VARCHAR(45) NOT NULL,
+  PRIMARY KEY (id)
+);
