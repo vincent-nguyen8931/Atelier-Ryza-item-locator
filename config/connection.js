@@ -1,8 +1,10 @@
 var mysql = require("mysql");
 var connection;
 
+// Checks jawsDB in heroku too see if connection has been made
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
+  // if not then localhost connection is created
 } else {
  connection = mysql.createConnection({
   host: "localhost",
@@ -13,6 +15,7 @@ if (process.env.JAWSDB_URL) {
 });
 }
 
+// test to see if connection is successful or not
 connection.connect(function(err) {
   if (err) {
       console.error("error connecting: " + err.stack);
